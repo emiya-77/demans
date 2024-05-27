@@ -1,0 +1,41 @@
+.links{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 28px;
+    margin-right: 80px;
+}
+
+.menuButton{
+    display: none;
+}
+
+.mobileLinks{
+    display: none;
+}
+
+@media (max-width: 768px){
+    .links{
+        display: none;
+    }
+
+    .menuButton{
+        display: block;
+        cursor: pointer;
+    }
+
+    .mobileLinks{
+        position: absolute;
+        top: 90px;
+        right: 0;
+        width: 50%;
+        height: calc(100vh - 90px);
+        background-color: rgb(208, 205, 205);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 10px;
+        overflow: hidden;
+    }
+}
