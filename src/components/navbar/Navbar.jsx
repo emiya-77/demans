@@ -11,15 +11,15 @@ import Button from "../button/Button";
 const Navbar = () => {
   return (
     <div className={`${styles.container} my-2`}>
-        <div className="w-[220px]">
-            <Image className="object-fit" src={Logo} alt="Logo"></Image>
-        </div>
-        <div className={`${dm_serif_display.className}`}>
-            <Links />
-        </div>
-        <div className={styles.display}>
-            <Button/>
-        </div>
+      <div className="w-[220px] md:w-[160px] xl:w-[220px]">
+        <Image className="object-fit" src={Logo} alt="Logo"></Image>
+      </div>
+      <div className={`${dm_serif_display.className} md:w-[100px]`}>
+        <Links />
+      </div>
+      <div className={styles.display}>
+        <Button value="Donate" />
+      </div>
     </div>
   )
 }

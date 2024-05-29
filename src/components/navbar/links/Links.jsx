@@ -34,7 +34,7 @@ const Links = () => {
     ];
 
     return (
-        <div className={styles.container}>
+        <div className={`${styles.container}`}>
             <div className={styles.links}>
                 {links.map(link => (
                     <NavLink item={link} key={link.title} />
@@ -46,7 +46,7 @@ const Links = () => {
                     {links.map((link) => (
                         <NavLink item={link} key={link.title} />
                     ))}
-                    <Button/>
+                    <Button value="Donate" />
                 </div>
             }
         </div>
