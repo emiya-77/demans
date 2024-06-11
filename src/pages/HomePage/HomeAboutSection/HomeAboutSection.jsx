@@ -1,8 +1,8 @@
 import Image from "next/image"
 import { DM_Serif_Display, PT_Sans } from "next/font/google";
-import Heading from "@/components/heading/Heading";
 import quote from "@/../public/symbol/quote.png";
 import Button from "@/components/button/Button";
+import Content from "@/components/content/Content";
 
 const dm_serif_display = DM_Serif_Display({ subsets: ["latin"], weight: "400" });
 const pt_sans = PT_Sans({ subsets: ["latin"], weight: "700" });
@@ -31,8 +31,8 @@ const HomeAboutSection = () => {
                     </div>
                 </div>
                 <div className="w-full xl:w-1/2 px-7">
-                    <Heading info={aboutInfo} />
-                    <div className="mt-8 text-center">
+                    <Content info={aboutInfo} />
+                    <div className="mt-8 text-center lg:text-start">
                         <div className="flex items-start px-5 gap-7 mb-20 text-start">
                             <Image src={quote} className="w-[104px]" alt="quote symbol" />
                             <p className={`${pt_sans.className}`}>Maecenas at lorem a odio commodo eleifend ac eget nunc. Integer et egestas lacus. In vehicula felis vitae euismod consectetur.</p>

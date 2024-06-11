@@ -8,7 +8,7 @@
 
 .menuButton,
 .mobileLinks {
-	display: none;
+	@apply hidden
 }
 
 @media (max-width: 768px) {
@@ -24,7 +24,7 @@
 	.mobileLinks {
 		position: absolute;
 		z-index: 100;
-		top: 90px;
+		top: 106px;
 		right: 0;
 		width: 60%;
 		height: calc(100vh - 90px);

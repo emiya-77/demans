@@ -1,0 +1,35 @@
+import Image from "next/image"
+import Button from "@/components/button/Button";
+import Content from "@/components/content/Content";
+
+const aboutInfo = {
+    subTitle: "Our Actions",
+    title: "For Animals, For Earth",
+    description: "Suspendisse porttitor interdum nisl eu iaculis. Maecenas et ex ante. Proin hendrerit tempor arcu in porta. Phasellus nibh urna, varius in varius scelerisque, tempus eu lorem. In commodo nisl nec mi scelerisque vestibulum. Suspendisse bibendum libero non mauris consequat, vel sagittis lectus suscipit.",
+    titleSize: "64",
+    titleColor: "#000000",
+    descriptionColor: "#7E7E7E",
+    width: "100%",
+}
+
+const MovementAction = () => {
+    return (
+        <div className={`font-primary w-full h-[1024px] xl:h-[630px] my-40`}>
+            <div className="h-full flex flex-col xl:flex-row justify-center items-center gap-12 xl:gap-0">
+                <div className="w-full xl:w-1/2 px-7">
+                    <Content info={aboutInfo} />
+                    <div className="mt-8 text-center lg:text-start">
+                        <Button value="Make a Donation" />
+                    </div>
+                </div>
+                <div className="relative w-full bg-[#EDEDED] xl:w-1/2 h-[70%]">
+                    <div className="w-full h-full">
+                        <Image src="" alt="" />
+                    </div>
+                </div>
+            </div>
+        </div>
+    )
+}
+
+export default MovementAction
