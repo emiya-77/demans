@@ -30,7 +30,6 @@ const HomeStat = () => {
                 <h1 className={`font-primary font-medium text-white text-[40px] lg:text-[50px] xl:text-[64px] leading-[90px]`}>Join A Wildlife Community Of Over Millions</h1>
             </div>
         </div>
-        {/* grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 */}
         <div className="w-full h-full grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 md:w-2/3 pl-10">
             {
                 homeStatData.map((stat) => (

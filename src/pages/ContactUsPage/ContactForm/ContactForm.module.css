@@ -1,0 +1,10 @@
+.textarea {
+    position: relative;
+    padding-top: 60px;
+  }
+  
+  .textarea::placeholder {
+    position: absolute;
+    top: calc(100% - 40px);
+  }
+  

@@ -14,18 +14,57 @@ const Links = () => {
         },
         {
             title: "About",
-            path: "/about-us",
+            path: "#",
             dropdown: true,
+            subMenu: [
+                {
+                    title: "About Us",
+                    path: "/about/about-us",
+                },
+                {
+                    title: "Our Team",
+                    path: "/about/our-team",
+                }
+            ]
         },
         {
             title: "Feature",
             path: "#",
             dropdown: true,
+            subMenu: [
+                {
+                    title: "Services",
+                    path: "/service",
+                },
+                {
+                    title: "Petition",
+                    path: "/petition",
+                },
+                {
+                    title: "Single Petition",
+                    path: "/petition/1",
+                }
+                ,
+                {
+                    title: "404",
+                    path: "/error",
+                }
+            ]
         },
         {
             title: "Blog",
             path: "#",
             dropdown: true,
+            subMenu: [
+                {
+                    title: "Archives",
+                    path: "/archives",
+                },
+                {
+                    title: "Single Post",
+                    path: "/archives/1",
+                }
+            ]
         },
         {
             title: "Contact",

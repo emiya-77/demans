@@ -1,7 +1,14 @@
+import Banner from "@/components/Banner/Banner";
+import NewsLetter from "@/components/newsLetter/NewsLetter";
+import HelpSection from "@/pages/ServicesPage/HelpSection/HelpSection";
 
 const ServicePage = () => {
   return (
-    <div>ServicePage</div>
+    <div>
+      <Banner value="Services"/>
+      <HelpSection/>
+      <NewsLetter/>
+    </div>
   )
 }
 

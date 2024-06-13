@@ -12,14 +12,17 @@ const aboutInfo = {
     width: "100%",
 }
 
-const MovementAction = () => {
+const MovementAction = ({info = aboutInfo}) => {
+
+    const {btnValue = "Make a Donation"} = info || '';
+
     return (
-        <div className={`font-primary w-full h-[1024px] xl:h-[630px] my-40`}>
+        <div className={`font-primary w-full h-[1024px] xl:h-[630px]`}>
             <div className="h-full flex flex-col xl:flex-row justify-center items-center gap-12 xl:gap-0">
-                <div className="w-full xl:w-1/2 px-7">
-                    <Content info={aboutInfo} />
+                <div className="w-full h-[70%] flex flex-col justify-between xl:w-1/2 px-7">
+                    <Content info={info} />
                     <div className="mt-8 text-center lg:text-start">
-                        <Button value="Make a Donation" />
+                        <Button value={btnValue} />
                     </div>
                 </div>
                 <div className="relative w-full bg-[#EDEDED] xl:w-1/2 h-[70%]">

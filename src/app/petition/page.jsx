@@ -1,7 +1,23 @@
+import Banner from "@/components/Banner/Banner";
+import NewsLetter from "@/components/newsLetter/NewsLetter";
+import MovementAction from "@/pages/HomePage/Movement/MovementAction";
+import PetitionContent from "@/pages/PetitionPage/PetitionContent/PetitionContent";
+
+const petitionActionInfo = {
+  subTitle: "Petitions Support",
+  title: "Give Your Support To Our Volunteers",
+  description: "Suspendisse porttitor interdum nisl eu iaculis. Maecenas et ex ante. Proin hendrerit tempor arcu in porta. Phasellus nibh urna, varius in varius scelerisque, tempus eu lorem. In commodo nisl nec mi scelerisque vestibulum.",
+  titleColor: "#000000",
+}
 
 const PetitionPage = () => {
   return (
-    <div>PetitionPage</div>
+    <div>
+      <Banner value="Petition"/>
+      <MovementAction info={petitionActionInfo} />
+      <PetitionContent/>
+      <NewsLetter/>
+    </div>
   )
 }
 
