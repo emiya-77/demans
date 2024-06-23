@@ -17,34 +17,34 @@ const leftList = [
 
 const SingleArchivesPost = () => {
   return (
-    <div className="my-40">
-        <div className="h-[860px] bg-[#EDEDED]"></div>
+    <div className="mt-20 2xl:my-40">
+        <div className="h-[250px] md:h-[430px] lg:h-[500px] xl:h-[700px] 2xl:h-[860px] bg-[#EDEDED]"></div>
         <div>
-            <div className="flex gap-8 mb-20">
+            <div className="flex justify-between md:gap-8 mb-8 md:mb-20 flex-wrap">
                 <div className="flex p-2 justify-center items-center gap-3">
                     <div className="text-primary">
                         <SlCalender size={20}/>
                     </div>
-                    <p className="font-primary text-[19.2px]">August 1, 2020</p>
+                    <p className="font-primary text-[14px] md:text-[19.2px]">August 1, 2020</p>
                 </div>
                 <div className="flex p-2 justify-center items-center gap-3">
                     <div className="text-primary">
                         <TfiAlarmClock size={20}/>
                     </div>
-                    <p className="font-primary text-[19.2px]">14:00 PM</p>
+                    <p className="font-primary text-[14px] md:text-[19.2px]">14:00 PM</p>
                 </div>
                 <div className="flex p-2 justify-center items-center gap-3">
                     <div className="text-primary">
                         <FaComments size={20}/>
                     </div>
-                    <p className="font-primary text-[19.2px]">No Comment</p>
+                    <p className="font-primary text-[14px] md:text-[19.2px]">No Comment</p>
                 </div>
             </div>
             <div className="mb-6">
                 <Content info={singleArchivesInfo}/>
             </div>
-            <div className="flex">
-                <div className="w-1/2">
+            <div className="flex flex-col md:flex-row gap-6 md:gap-0">
+                <div className="w-full md:w-1/2">
                     <ul className="p-6 space-y-4">
                         {
                             leftList.map((listItem, idx) => (
@@ -54,7 +54,7 @@ const SingleArchivesPost = () => {
                     </ul>
                     <p className="font-secondary text-[#7E7E7E]">Integer vitae cursus orci. Ut quis felis finibus, mattis purus sed, dapibus eros. Duis nec nibh turpis. Nullam sit amet varius nunc. Donec vestibulum ipsum arcu, fermentum condimentum magna lacinia eget. Donec scelerisque blandit augue nec condimentum.</p>
                 </div>
-                <div className="w-1/2 flex justify-center items-center gap-8">
+                <div className="w-full md:w-1/2 flex justify-center items-center gap-8">
                     <div className="w-[300px] h-[200px] bg-[#EDEDED]"></div>
                     <div className="w-[300px] h-[200px] bg-[#EDEDED]"></div>
                 </div>

@@ -22,7 +22,7 @@ const ArchivesBlog = () => {
   return (
     <div className="">
         <div className="py-20">
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 place-items-center">
+            <div className="grid grid-cols-1 lg:grid-cols-2 xl:grid-cols-3 place-items-center gap-8">
                 {
                     archivesBlogInfo.map((info) => (
                         <HomeBlogCard info={info} key={info.id} />

@@ -29,13 +29,13 @@ const homeBlogInfo = [
 const HomeBlog = () => {
 
   return (
-    <div className="h-[954px]">
-        <div className="absolute bg-[#EDEDED] h-[954px] left-0 right-0 -z-10"></div>
+    <div className="min-h-[954px]">
+        <div className="absolute bg-[#EDEDED] h-[1850px] lg:h-[1350px] left-0 right-0 -z-10"></div>
         <div className="py-20">
             <div className="mb-4">
                 <Heading info={info} />
             </div>
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 place-items-center">
+            <div className="grid grid-cols-1 lg:grid-cols-2 xl:grid-cols-3 place-items-center gap-6">
                 {
                     homeBlogInfo.map((info) => (
                         <HomeBlogCard info={info} key={info.id} />

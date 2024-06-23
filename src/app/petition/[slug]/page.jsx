@@ -16,7 +16,9 @@ const page = () => {
         <Banner value="Single Petition" />
         <SinglePetitionContent/>
         <MovementAction info={SinglePetitionInfo} />
-        <NewsLetter/>
+        <div className="mb-40 md:mb-0">
+          <NewsLetter/>
+        </div>
     </div>
   )
 }

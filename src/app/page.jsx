@@ -13,7 +13,9 @@ const Home = () => {
       <Banner />
       <CoreValues />
       <HomeAboutSection />
-      <NewsLetter />
+      <div className="mt-40">
+        <NewsLetter />
+      </div>
       {/* <UrgentThreats /> */}
       <HomeStat/>
       <Movement/>

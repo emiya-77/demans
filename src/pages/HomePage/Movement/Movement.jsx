@@ -36,9 +36,9 @@ const Movement = () => {
 
   return (
     <div className="flex flex-col">
-        <div className="h-[538px] bg-[#EDEDED]">
+        <div className="h-[300px] md:h-[538px] bg-[#EDEDED]">
         </div>
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 place-items-center py-4 my-4">
+        <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4 place-items-center py-4 my-4">
             {
                 movementData.map((movement) => (
                     <MovementCard info={movement} key={movement.id}/>

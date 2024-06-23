@@ -28,7 +28,8 @@
 		right: 0;
 		width: 60%;
 		height: calc(100vh - 90px);
-		background-color: rgb(208, 205, 205);
+		background-color: rgb(251, 239, 239);
+		/* rgb(208, 205, 205); */
 		display: flex;
 		flex-direction: column;
 		align-items: center;

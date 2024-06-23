@@ -13,7 +13,9 @@ const AboutUsPage = () => {
       <AboutNumbers/>
       <HomeAboutSection />
       <AboutStat />
-      <NewsLetter />
+      <div className="mb-40 mt-112 md:mb-0 md:mt-0">
+        <NewsLetter />
+      </div>
       <MovementAction/>
       <AboutTestimonial/>
     </div>

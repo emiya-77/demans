@@ -1,6 +1,8 @@
 .textarea {
     position: relative;
     padding-top: 60px;
+    resize: none;
+    overflow: auto;
   }
   
   .textarea::placeholder {

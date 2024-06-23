@@ -21,7 +21,9 @@ const OurTeamPage = () => {
         <OurVolunteers />
       </div>
       <MovementAction info={teamActionInfo}/>
-      <NewsLetter />
+      <div className="mb-40 mt-40">
+        <NewsLetter />
+      </div>
     </div>
   )
 }

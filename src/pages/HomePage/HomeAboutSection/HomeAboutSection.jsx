@@ -26,7 +26,7 @@ const HomeAboutSection = () => {
                         <Image src="" alt="" />
                     </div>
                     <div className="absolute bottom-20  text-center bg-[#FF8E00] px-[56px] w-[380px] md:w-[410px] h-[164px]">
-                        <h1 className="text-[92.8px] text-white leading-[105px]">480Ton</h1>
+                        <h1 className="text-[80px] md:text-[92.8px] text-white leading-[105px]">480Ton</h1>
                         <p className="font-bold text-2xl">of trash every minutes</p>
                     </div>
                 </div>

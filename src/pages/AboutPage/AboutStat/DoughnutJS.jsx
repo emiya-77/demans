@@ -2,23 +2,45 @@
 
 import { Chart as ChartJS, ArcElement, Tooltip, Legend } from "chart.js";
 import { Doughnut } from "react-chartjs-2";
+import { useEffect, useRef, useState } from "react";
 
 ChartJS.register(ArcElement, Tooltip, Legend);
 
 const DoughnutJS = ({progress = 50}) => {
 
+  const chartContainerRef = useRef(null);
+  const [chartSize, setChartSize] = useState({ width: 200, height: 200 });
+
+  useEffect(() => {
+    const updateChartSize = () => {
+      if (chartContainerRef.current) {
+        const containerWidth = chartContainerRef.current.offsetWidth;
+        setChartSize({ width: containerWidth, height: containerWidth });
+      }
+    };
+
+    window.addEventListener("resize", updateChartSize);
+    updateChartSize();
+
+    return () => {
+      window.removeEventListener("resize", updateChartSize);
+    };
+  }, []);
+
   const remaining = 100 - progress;
 
   return (
-    <div>
+    <div ref={chartContainerRef} style={{ width: '100%', maxWidth: '400px', margin: '0 auto' }}>
       <Doughnut 
         data={{
           datasets: [
             {
               label: "Progress",
               data: [progress, remaining], 
-              cutout: 135,
-              radius: 65,
+              cutout: '95%',
+              radius: 46,
+              // cutout: 135,
+              // radius: 65,
               backgroundColor: [
                 '#7E7E7E',
                 '#EDEDED',  
@@ -26,12 +48,21 @@ const DoughnutJS = ({progress = 50}) => {
               hoverOffset: 16,
               borderWidth: 0,
               spacing: 0,
-              animation: {
-                animateScale: true
-              }
+              // animation: {
+              //   animateScale: true
+              // }
             }
           ]
         }}
+        options={{
+          maintainAspectRatio: false,
+          responsive: true,
+          animation: {
+            animateScale: true
+          }
+        }}
+        width={chartSize.width}
+        height={chartSize.height}
       />
     </div>
   )

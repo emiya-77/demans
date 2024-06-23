@@ -10,11 +10,11 @@ const PetitionContentCard = ({info}) => {
         <div className="h-[538px] bg-[#EDEDED]">
 
         </div>
-        <div className="flex justify-between py-8">
-            <div className="w-1/2">
+        <div className="flex flex-col md:flex-row justify-between py-8">
+            <div className="w-full md:w-1/2">
                 <Content info={{title:title, description:description, titleColor:"#000000"}}/>
             </div>
-            <div className="w-1/2 h-full flex flex-col items-start justify-between font-secondary">
+            <div className="w-full md:w-1/2 h-full flex flex-col items-start justify-between font-secondary">
                 <p className="text-[#7E7E7E]">{left_topText}</p>
                 <ul className="p-6 space-y-4">
                     {

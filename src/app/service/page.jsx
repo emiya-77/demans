@@ -7,7 +7,9 @@ const ServicePage = () => {
     <div>
       <Banner value="Services"/>
       <HelpSection/>
-      <NewsLetter/>
+      <div className="mb-40 md:mb-0">
+        <NewsLetter/>
+      </div>
     </div>
   )
 }

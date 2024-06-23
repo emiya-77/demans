@@ -25,7 +25,7 @@ const aboutNumbersInfo = [
 
 const AboutNumbers = () => {
   return (
-    <div className="flex justify-around items-center mt-20">
+    <div className="flex justify-around items-center flex-wrap mt-20">
         {
             aboutNumbersInfo.map((number) => (
                 <AboutNumbersCard key={number.id} info={number} />
