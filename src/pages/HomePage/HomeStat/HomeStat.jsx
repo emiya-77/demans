@@ -1,3 +1,4 @@
+import Image from "next/image"
 import DoughnutJS from "./DoughnutJS"
 import StatCard from "./StatCard"
 
@@ -23,6 +24,12 @@ const HomeStat = () => {
   return (
     <div className={`font-primary h-[960px] lg:h-[677px] flex flex-col xl:flex-row items-center gap-2 md:gap-7 my-56`}>
         <div className="absolute left-0 right-0 w-full h-[960px] lg:h-[677px] bg-[#787878] -z-10">
+            <Image 
+                src="https://i.ibb.co/k8xykrW/home-5.jpg" 
+                alt="Banner Image" 
+                layout="fill" 
+                objectFit="cover"
+            />
         </div>
         <div className="w-full h-[30%] lg:h-full flex items-center xl:w-1/3 ">
             <div className={`w-full text-center xl:text-start pt-6 md:pt-0`}>

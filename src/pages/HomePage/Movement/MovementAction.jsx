@@ -26,8 +26,13 @@ const MovementAction = ({info = aboutInfo}) => {
                     </div>
                 </div>
                 <div className="relative w-full bg-[#EDEDED] xl:w-1/2 h-[30%] md:h-[40%] lg:h-[70%]">
-                    <div className="w-full h-full">
-                        <Image src="" alt="" />
+                    <div className="relative w-full h-full">
+                        <Image 
+                            src="https://i.ibb.co/j3dbbVH/home-27.jpg" 
+                            alt="Banner Image" 
+                            layout="fill" 
+                            objectFit="cover"
+                        />
                     </div>
                 </div>
             </div>

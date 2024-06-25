@@ -23,7 +23,7 @@ const HomeAboutSection = () => {
             <div className="h-full flex flex-col xl:flex-row justify-center items-center gap-12 xl:gap-0">
                 <div className="relative w-full bg-[#EDEDED] xl:w-1/2 h-full">
                     <div className="w-full h-full">
-                        <Image src="" alt="" />
+                        <Image src="https://i.ibb.co/WByhb1m/home-9.jpg" alt="Home About Us Image" layout="fill" objectFit="cover" />
                     </div>
                     <div className="absolute bottom-20  text-center bg-[#FF8E00] px-[56px] w-[380px] md:w-[410px] h-[164px]">
                         <h1 className="text-[80px] md:text-[92.8px] text-white leading-[105px]">480Ton</h1>

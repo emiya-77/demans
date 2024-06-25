@@ -1,3 +1,4 @@
+import Image from "next/image";
 import Button from "../button/Button"
 import { DM_Serif_Display } from "next/font/google";
 const dm_serif_display = DM_Serif_Display({ subsets: ["latin"], weight: "400" });
@@ -6,6 +7,13 @@ const NewsLetter = () => {
     return (
         <div className={`font-primary h-[458px] flex flex-col md:flex-row items-center gap-2 md:gap-7`}>
             <div className="absolute left-0 w-full h-full md:h-[458px] bg-[#787878] -z-10">
+                <Image 
+                    src="https://i.ibb.co/yWKCkh1/home-11.jpg" 
+                    alt="Newsletter Background" 
+                    layout="fill" 
+                    objectFit="cover" 
+                    className="sticky"
+                />
             </div>
             <div className="w-full md:w-1/3 h-full flex justify-center items-start">
                 <div className="w-[300px] h-[300px] md:w-[300px] md:h-[350px] lg:w-[410px] lg:h-[410px] bg-gray-300">

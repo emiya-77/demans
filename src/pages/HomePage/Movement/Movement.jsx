@@ -5,6 +5,7 @@ import globe from '@/../public/brand/globe.png';
 import paw from '@/../public/brand/paw.png';
 import flower from '@/../public/brand/flower.png';
 import MovementAction from "./MovementAction";
+import Image from "next/image";
 
 const Movement = () => {
     const movementData = [
@@ -33,10 +34,16 @@ const Movement = () => {
             image: flower,
         },
     ]
-
+    
   return (
     <div className="flex flex-col">
-        <div className="h-[300px] md:h-[538px] bg-[#EDEDED]">
+        <div className="relative h-[300px] md:h-[538px] bg-[#EDEDED]">
+            <Image 
+                src="https://i.ibb.co/6mKC066/home-24.jpg" 
+                alt="Movement Image" 
+                layout="fill" 
+                objectFit="cover"
+            />
         </div>
         <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4 place-items-center py-4 my-4">
             {

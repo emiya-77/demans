@@ -30,7 +30,7 @@ const HomeBlog = () => {
 
   return (
     <div className="min-h-[954px]">
-        <div className="absolute bg-[#EDEDED] h-[1850px] lg:h-[1350px] left-0 right-0 -z-10"></div>
+        <div className="absolute bg-[#EDEDED] h-[1850px] lg:h-[1350px] xl:h-[950px] left-0 right-0 -z-10"></div>
         <div className="py-20">
             <div className="mb-4">
                 <Heading info={info} />
