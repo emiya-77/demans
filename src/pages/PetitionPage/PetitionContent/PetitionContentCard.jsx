@@ -2,8 +2,6 @@ import Content from "@/components/content/Content"
 
 const PetitionContentCard = ({info}) => {
     const {title, description, left_topText, leftList, left_bottomText,} = info || '';
-    console.log(info);
-    console.log(info.leftList);
 
   return (
     <div className="mt-16 mb-32">
@@ -18,7 +16,7 @@ const PetitionContentCard = ({info}) => {
                 <p className="text-[#7E7E7E]">{left_topText}</p>
                 <ul className="p-6 space-y-4">
                     {
-                        leftList.map((listItem, idx) => (
+                        leftList?.map((listItem, idx) => (
                             <li className="list-disc" key={idx}>{listItem}</li>
                         ))
                     }

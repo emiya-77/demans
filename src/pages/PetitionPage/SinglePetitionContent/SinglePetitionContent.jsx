@@ -28,7 +28,7 @@ const SinglePetitionContent = () => {
           <Content info={topContent} />
           <ul className="p-6 space-y-4">
             {
-              leftList.map((listItem, idx) => (
+              leftList?.map((listItem, idx) => (
                 <li className="list-disc" key={idx}>{listItem}</li>
               ))
             }

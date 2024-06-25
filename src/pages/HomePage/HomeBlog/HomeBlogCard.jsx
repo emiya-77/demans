@@ -15,7 +15,7 @@ const HomeBlogCard = ({info}) => {
             />
         </div>
         <div className="px-5 py-6 text-center md:text-start">
-            <h1 className="font-primary text-black text-2xl line-clamp-1 mb-3">{title}</h1>
+            <h1 className="font-primary text-black text-2xl line-clamp-1 mb-3">{title || ""}</h1>
             <p className="font-secondary leading-[21px] text-[#7E7E7E] line-clamp-5">{description}</p>
         </div>
         <Button value="Learn More"/>

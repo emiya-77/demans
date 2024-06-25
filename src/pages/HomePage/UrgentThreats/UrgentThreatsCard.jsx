@@ -11,7 +11,7 @@ const UrgentThreatsCard = ({info}) => {
         <div className="w-[150px] h-[200px] xl:w-[250px] xl:h-[300px] bg-[#EDEDED] -mt-10 xl:-mt-12">
         </div>
         <div className="h-full text-center px-4 xl:px-10 py-4 flex flex-col justify-evenly items-center">
-            <h4 className={`${dm_serif_display.className} text-[24px] xl:text-[32px] text-black line-clamp-2`}>{title}</h4>
+            <h4 className={`${dm_serif_display.className} text-[24px] xl:text-[32px] text-black line-clamp-2`}>{title || ""}</h4>
             <p className={`${pt_sans.className} text-[12px] xl:text-[16px] text-white`}>{description}</p>
             <Button value="Take Action" color="#000000" />
         </div>
