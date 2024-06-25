@@ -21,7 +21,7 @@ const CoreValues = () => {
         <div className="flex justify-center items-center">
             <div className="w-full grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 text-center md:text-start gap-10 md:gap-1 lg:gap-6 my-14 p-2">
                 {
-                    coreValues.map(value => (
+                    coreValues?.map(value => (
                         <CoreValuesCard key={value.id} value={value} />
                     ))
                 }
