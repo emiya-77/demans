@@ -12,7 +12,7 @@ const Navbar = () => {
   return (
     <div className={`${styles.container} my-2`}>
       <div className="w-[220px] md:w-[160px] xl:w-[220px]">
-        <Image className="object-fit" src={Logo} alt="Logo"></Image>
+        <Image className="object-fit" src={Logo || ''} alt="Logo"></Image>
       </div>
       <div className={`font-primary md:w-auto`}>
         <Links />

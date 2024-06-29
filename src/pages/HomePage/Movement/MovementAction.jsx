@@ -28,7 +28,7 @@ const MovementAction = ({info = aboutInfo, img}) => {
                 <div className="relative w-full bg-[#EDEDED] xl:w-1/2 h-[30%] md:h-[40%] lg:h-[70%] shadow-lg">
                     <div className="relative w-full h-full">
                         <Image 
-                            src={img} 
+                            src={img || ''} 
                             alt="Banner Image" 
                             layout="fill" 
                             objectFit="cover"

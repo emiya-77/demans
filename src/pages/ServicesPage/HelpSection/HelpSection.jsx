@@ -35,7 +35,7 @@ const HelpSection = () => {
             <div className="w-full h-1/3 flex items-center">
                 <div className="absolute right-0 left-0 flex flex-col md:flex-row justify-between items-center">
                     <div className="w-[380px] h-[300px] xl:w-[600px] xl:h-[600px] bg-white" style={{
-                    backgroundImage: `url(${servicesHelpImg.src})`,
+                    backgroundImage: `url(${servicesHelpImg?.src})`,
                     backgroundSize: 'cover',
                     backgroundPosition: 'center',
                     }}>

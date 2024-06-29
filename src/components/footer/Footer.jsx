@@ -9,7 +9,7 @@ const Footer = () => {
     <div className={`${dm_serif_display.className} px-4 md:px-0 mt-20 md:mt-40 flex flex-col md:flex-row border-b-[1px] border-black mb-10 pb-8 gap-10 lg:gap-16 xl:gap-0`}>
       <div className="w-full md:w-2/5 mb-4 md:mb-0">
         <div className="w-[220px] md:w-[280px] mb-7">
-          <Image className="object-fit" src={Logo} alt="Footer logo" />
+          <Image className="object-fit" src={Logo || ''} alt="Footer logo" />
         </div>
         <h1 className="text-[24px] text-primary mb-3">About Us</h1>
         <p className={`${pt_sans.className} text-[#7E7E7E]`}>Curabitur hendrerit diam vitae sem egestas ornare. Suspendisse ultrices risus eu quam scelerisque rutrum.</p>

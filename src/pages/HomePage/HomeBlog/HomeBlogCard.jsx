@@ -8,7 +8,7 @@ const HomeBlogCard = ({info}) => {
     <div className="w-[410px] lg:w-[370px] xl:w-[410px] flex flex-col items-center md:items-start">
         <div className="relative w-full h-[274px] bg-[#EDEDED]">
           <Image 
-              src={img} 
+              src={img || ''} 
               alt="Blog Image" 
               layout="fill" 
               objectFit="cover"

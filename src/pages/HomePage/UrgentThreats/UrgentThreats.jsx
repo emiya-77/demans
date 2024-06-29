@@ -33,7 +33,7 @@ const urgentCard = [
 const UrgentThreats = () => {
   return (
     <div className="w-full max-h-[700px] lg:max-h-[800px] xl:max-h-[1218px] -z-20 flex flex-col justify-center items-center relative">
-        <Image src={bg} className="absolute scale-150 -z-10" alt="Background Image" />
+        <Image src={bg || ''} className="absolute scale-150 -z-10" alt="Background Image" />
         <div className="mb-10">
             <Heading info={urgentInfo} />
         </div>

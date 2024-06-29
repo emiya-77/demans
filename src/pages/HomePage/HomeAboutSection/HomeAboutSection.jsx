@@ -45,7 +45,7 @@ const HomeAboutSection = () => {
                         <Content info={aboutInfo} />
                         <div className="mt-8 text-center lg:text-start">
                             <div className="flex items-start px-5 gap-7 mb-20 text-start">
-                                <Image src={quote} className="w-[104px]" alt="quote symbol" />
+                                <Image src={quote || ''} className="w-[104px]" alt="quote symbol" />
                                 <p className={`${pt_sans.className}`}>Maecenas at lorem a odio commodo eleifend ac eget nunc. Integer et egestas lacus. In vehicula felis vitae euismod consectetur.</p>
                             </div>
                             <Button value="Read More" />

@@ -8,7 +8,7 @@ const NotFound = () => {
     <div className="">
       <div className="h-[480px] md:h-[680px] 2xl:h-[680px] -z-10 absolute left-0 right-0 top-28 bottom-0 bg-[#B0B0B0]"
       style={{
-        backgroundImage: `url(${img404.src})`,
+        backgroundImage: `url(${img404?.src})`,
         backgroundSize: 'cover',
         backgroundPosition: 'center',
       }}></div>

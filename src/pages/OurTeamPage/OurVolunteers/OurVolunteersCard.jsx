@@ -9,7 +9,7 @@ const OurVolunteersCard = ({info}) => {
     <div className="max-w-[410px]">
         <div className="relative bg-[#EDEDED] w-full h-[400px] md:h-[300px] lg:h-[300px] xl:h-[478px]">
             <Image
-                src={img} 
+                src={img || ''} 
                 alt="Volunteer Image" 
                 layout="fill" 
                 objectFit="cover"

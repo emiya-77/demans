@@ -7,7 +7,7 @@ const AboutTestimonialCard = ({info, currentTestimonial, isAnimating}) => {
   return (
     <div className={`w-full h-full bg-[#EDEDED] flex flex-shrink-0 flex-grow-0 justify-center items-center transition-all duration-1000 ease-in-out bg-cover bg-center`} style={{
         translate: `${-101.4 * currentTestimonial}%`,
-        backgroundImage: `url(${img.src})`,
+        backgroundImage: `url(${img?.src})`,
     }}>
         <div className='absolute left-0 right-0 top-0 bottom-0 bg-black bg-opacity-10 -z-10 backdrop-blur-sm'>
 

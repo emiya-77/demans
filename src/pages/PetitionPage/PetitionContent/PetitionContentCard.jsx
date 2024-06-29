@@ -7,7 +7,7 @@ const PetitionContentCard = ({info}) => {
   return (
     <div className="mt-16 mb-32">
         <div className="relative h-[538px] bg-[#EDEDED]">
-            <Image src={img} 
+            <Image src={img || ''} 
                 alt="Home About Us Image" 
                 layout="fill" 
                 objectFit="cover"

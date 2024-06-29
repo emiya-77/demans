@@ -29,7 +29,7 @@ const SinglePetitionContent = () => {
       <div className="w-full flex flex-col flex-wrap lg:flex-nowrap md:flex-row justify-center gap-8">
         <div className="relative w-full md:w-[calc(50%-16px)] lg:w-1/3 h-[546px] md:h-[380px] lg:h-[546px] bg-[#EDEDED] shadow-lg">
           <Image 
-            src={petitionSingleImg1} 
+            src={petitionSingleImg1 || ''} 
             alt="Banner Image" 
             layout="fill" 
             objectFit="cover"
@@ -56,7 +56,7 @@ const SinglePetitionContent = () => {
         </div>
         <div className="relative w-full md:w-[calc(50%-16px)] lg:w-1/3 h-[546px] md:h-[220px] lg:h-[546px] bg-[#EDEDED] shadow-lg">
           <Image 
-            src={petitionSingleImg2} 
+            src={petitionSingleImg2 || ''} 
             alt="Banner Image" 
             layout="fill" 
             objectFit="cover"
@@ -65,7 +65,7 @@ const SinglePetitionContent = () => {
         <div className="w-full lg:w-1/3 flex flex-col md:flex-row lg:flex-col justify-start items-start gap-4 md:gap-8 lg:gap-4">
             <div className="relative h-[272px] md:h-[220px] lg:h-[272px] w-full md:w-1/2 lg:w-full bg-[#EDEDED] shadow-lg">
             <Image 
-              src={petitionSingleImg3} 
+              src={petitionSingleImg3 || ''} 
               alt="Banner Image" 
               layout="fill" 
               objectFit="cover"
