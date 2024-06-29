@@ -6,20 +6,21 @@ const dm_serif_display = DM_Serif_Display({ subsets: ["latin"], weight: "400" })
 const NewsLetter = () => {
     return (
         <div className={`font-primary h-[458px] flex flex-col md:flex-row items-center gap-2 md:gap-7`}>
-            <div className="absolute left-0 w-full h-full md:h-[458px] bg-[#787878] -z-10">
-                <Image 
-                    src="https://i.ibb.co/yWKCkh1/home-11.jpg" 
-                    alt="Newsletter Background" 
-                    layout="fill" 
-                    objectFit="cover" 
-                    className="sticky"
-                />
+            <div className="absolute bg-[url('https://i.ibb.co/yWKCkh1/home-11.jpg')] bg-left bg-fixed left-0 w-full h-full md:h-[458px] bg-[#787878] -z-10">
             </div>
+            <div className="absolute w-full left-0 right-0 h-full md:h-[458px] bg-black opacity-20"></div>
             <div className="w-full md:w-1/3 h-full flex justify-center items-start">
-                <div className="w-[300px] h-[300px] md:w-[300px] md:h-[350px] lg:w-[410px] lg:h-[410px] bg-gray-300">
+                <div className="relative w-[300px] h-[300px] md:w-[300px] md:h-[350px] lg:w-[410px] lg:h-[410px] bg-gray-300">
+                    <Image 
+                        src="https://i.ibb.co/WN9tST9/home-15.jpg" 
+                        alt="Newsletter Background" 
+                        layout="fill" 
+                        objectFit="cover" 
+                        className="shadow-lg"
+                    />
                 </div>
             </div>
-            <div className="w-full md:w-2/3 text-center md:text-start">
+            <div className="w-full md:w-2/3 text-center md:text-start z-10">
                 <h1 className="text-[60px] lg:text-[80px] xl:text-[92.8px] text-white">Join Us Now!</h1>
                 <p className="text-2xl text-[#FF8E00] mb-12">Become One Of Our Growing Family Of Volunteers To Protect Animals.</p>
                 <div className="flex justify-center gap-5">

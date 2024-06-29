@@ -3,6 +3,9 @@ import NewsLetter from "@/components/newsLetter/NewsLetter";
 import MovementAction from "@/pages/HomePage/Movement/MovementAction";
 import OurVolunteers from "@/pages/OurTeamPage/OurVolunteers/OurVolunteers";
 
+import teamMovementImg from '@/../public/img/team/team-1.jpg'
+import teamBannerImg from '@/../public/img/team/team-2.jpg'
+
 const teamActionInfo = {
   subTitle: "Petitions Support",
   title: "Give Your Support To Our Volunteers",
@@ -16,11 +19,11 @@ const teamActionInfo = {
 const OurTeamPage = () => {
   return (
     <div>
-      <Banner value="Our Team" />
+      <Banner value="Our Team" img={teamBannerImg} />
       <div className="mt-20">
         <OurVolunteers />
       </div>
-      <MovementAction info={teamActionInfo}/>
+      <MovementAction info={teamActionInfo} img={teamMovementImg}/>
       <div className="mb-40 mt-40">
         <NewsLetter />
       </div>

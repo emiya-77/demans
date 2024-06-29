@@ -3,6 +3,9 @@ import NewsLetter from "@/components/newsLetter/NewsLetter";
 import MovementAction from "@/pages/HomePage/Movement/MovementAction";
 import PetitionContent from "@/pages/PetitionPage/PetitionContent/PetitionContent";
 
+import petitionBannerImg from "@/../public/img/petition/petition-3.webp"
+import petitionMovementImg from "@/../public/img/petition/petition-4.jpg"
+
 const petitionActionInfo = {
   subTitle: "Petitions Support",
   title: "Give Your Support To Our Volunteers",
@@ -13,8 +16,8 @@ const petitionActionInfo = {
 const PetitionPage = () => {
   return (
     <div>
-      <Banner value="Petition"/>
-      <MovementAction info={petitionActionInfo} />
+      <Banner value="Petition" img={petitionBannerImg}/>
+      <MovementAction info={petitionActionInfo} img={petitionMovementImg} />
       <PetitionContent/>
       <div className="mb-40 md:mb-0">
         <NewsLetter/>

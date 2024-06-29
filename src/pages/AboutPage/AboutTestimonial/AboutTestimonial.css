@@ -1,0 +1,8 @@
+.testimonial-slide {
+    transition: transform 0.5s ease-in-out;
+  }
+  
+  .testimonial-slide.slide {
+    transform: translateX(-100%);
+  }
+  

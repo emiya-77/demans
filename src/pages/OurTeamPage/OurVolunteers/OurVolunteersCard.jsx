@@ -1,13 +1,19 @@
 import { FaTwitter } from "react-icons/fa6";
 import { FaFacebookF } from "react-icons/fa";
 import { FaLinkedinIn } from "react-icons/fa";
+import Image from "next/image";
 
 const OurVolunteersCard = ({info}) => {
-    const {name, designation} = info || '';
+    const {img, name, designation} = info || '';
   return (
     <div className="max-w-[410px]">
-        <div className="bg-[#EDEDED] w-full h-[400px] md:h-[300px] lg:h-[300px] xl:h-[478px]">
-
+        <div className="relative bg-[#EDEDED] w-full h-[400px] md:h-[300px] lg:h-[300px] xl:h-[478px]">
+            <Image
+                src={img} 
+                alt="Volunteer Image" 
+                layout="fill" 
+                objectFit="cover"
+            />
         </div>
         <div className="bg-[#7E7E7E] p-6">
             <div className="text-center mb-5">

@@ -13,16 +13,19 @@ const homeBlogInfo = [
         id: 1,
         title: "Why Is Deforestation An…",
         description: "Single Post August 1, 20202 14:00 PM No Comment Why Is Deforestation an Urgent Global Problem Ut sem augue, egestas vel nunc eget, interdum tristique magna. Fusce tempor leo in nunc tincidunt volutpat. Nunc fringilla tincidunt augue, eu scelerisque nisi…",
+        img: "https://i.ibb.co/vxwJw9s/home-32.jpg",
     },
     {
         id: 2,
         title: "Let's Help The Endangered...",
         description: "Single Post August 1, 20202 14:00 PM No Comment Why Is Deforestation an Urgent Global Problem Ut sem augue, egestas vel nunc eget, interdum tristique magna. Fusce tempor leo in nunc tincidunt volutpat. Nunc fringilla tincidunt augue, eu scelerisque nisi…",
+        img: "https://i.ibb.co/N7cF2wq/home-28.jpg",
     },
     {
         id: 3,
         title: "How Climate Changes Influence...",
         description: "Single Post August 1, 20202 14:00 PM No Comment Why Is Deforestation an Urgent Global Problem Ut sem augue, egestas vel nunc eget, interdum tristique magna. Fusce tempor leo in nunc tincidunt volutpat. Nunc fringilla tincidunt augue, eu scelerisque nisi…",
+        img: "https://i.ibb.co/BGntB1H/home-25.jpg",
     }
 ]
 

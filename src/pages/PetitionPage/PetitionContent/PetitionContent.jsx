@@ -1,5 +1,8 @@
 import PetitionContentCard from "./PetitionContentCard"
 
+import petitionImg1 from "@/../public/img/petition/petition-5.jpg"
+import petitionImg2 from "@/../public/img/petition/petition-8.jpg"
+
 const petitionInfo = [
     {
         id: 1,
@@ -12,6 +15,7 @@ const petitionInfo = [
             "Etiam pretium scelerisque lorem"
         ],
         left_bottomText: "Integer vitae cursus orci. Ut quis felis finibus, mattis purus sed, dapibus eros. Duis nec nibh turpis. Nullam sit amet varius nunc. Donec vestibulum ipsum arcu, fermentum condimentum magna lacinia eget. Donec scelerisque blandit augue nec condimentum.",
+        img: petitionImg1,
     },
     {
         id: 2,
@@ -24,6 +28,7 @@ const petitionInfo = [
             "Etiam pretium scelerisque lorem"
         ],
         left_bottomText: "Integer vitae cursus orci. Ut quis felis finibus, mattis purus sed, dapibus eros. Duis nec nibh turpis. Nullam sit amet varius nunc. Donec vestibulum ipsum arcu, fermentum condimentum magna lacinia eget. Donec scelerisque blandit augue nec condimentum.",
+        img: petitionImg2,
     }
 ]
 

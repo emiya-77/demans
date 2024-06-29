@@ -12,7 +12,7 @@ const aboutInfo = {
     width: "100%",
 }
 
-const MovementAction = ({info = aboutInfo}) => {
+const MovementAction = ({info = aboutInfo, img}) => {
 
     const {btnValue = "Make a Donation"} = info || '';
 
@@ -25,10 +25,10 @@ const MovementAction = ({info = aboutInfo}) => {
                         <Button value={btnValue} />
                     </div>
                 </div>
-                <div className="relative w-full bg-[#EDEDED] xl:w-1/2 h-[30%] md:h-[40%] lg:h-[70%]">
+                <div className="relative w-full bg-[#EDEDED] xl:w-1/2 h-[30%] md:h-[40%] lg:h-[70%] shadow-lg">
                     <div className="relative w-full h-full">
                         <Image 
-                            src="https://i.ibb.co/j3dbbVH/home-27.jpg" 
+                            src={img} 
                             alt="Banner Image" 
                             layout="fill" 
                             objectFit="cover"

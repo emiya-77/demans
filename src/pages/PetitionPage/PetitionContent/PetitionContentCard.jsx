@@ -1,12 +1,17 @@
 import Content from "@/components/content/Content"
+import Image from "next/image";
 
 const PetitionContentCard = ({info}) => {
-    const {title, description, left_topText, leftList, left_bottomText,} = info || '';
+    const {img, title, description, left_topText, leftList, left_bottomText,} = info || '';
 
   return (
     <div className="mt-16 mb-32">
-        <div className="h-[538px] bg-[#EDEDED]">
-
+        <div className="relative h-[538px] bg-[#EDEDED]">
+            <Image src={img} 
+                alt="Home About Us Image" 
+                layout="fill" 
+                objectFit="cover"
+                />
         </div>
         <div className="flex flex-col md:flex-row justify-between py-8">
             <div className="w-full md:w-1/2">

@@ -6,17 +6,20 @@ import AboutTestimonial from "@/pages/AboutPage/AboutTestimonial/AboutTestimonia
 import HomeAboutSection from "@/pages/HomePage/HomeAboutSection/HomeAboutSection"
 import MovementAction from "@/pages/HomePage/Movement/MovementAction"
 
+import aboutBannerImg from '@/../public/img/about/about-10.jpg'
+import aboutMovementImg from '@/../public/img/about/about-1.jpg'
+
 const AboutUsPage = () => {
   return (
     <div>
-      <Banner value="About Us"/>
+      <Banner value="About Us" img={aboutBannerImg}/>
       <AboutNumbers/>
       <HomeAboutSection />
       <AboutStat />
       <div className="mb-40 mt-112 md:mb-0 md:mt-0">
         <NewsLetter />
       </div>
-      <MovementAction/>
+      <MovementAction img={aboutMovementImg}/>
       <AboutTestimonial/>
     </div>
   )

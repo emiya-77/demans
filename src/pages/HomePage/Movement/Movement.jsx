@@ -53,7 +53,7 @@ const Movement = () => {
             }
         </div>
         <div>
-            <MovementAction/>
+            <MovementAction img="https://i.ibb.co/j3dbbVH/home-27.jpg"/>
         </div>
     </div>
   )
