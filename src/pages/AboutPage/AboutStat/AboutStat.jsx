@@ -33,13 +33,13 @@ const aboutInfo = {
 
 const AboutStat = () => {
   return (
-    <div className={`font-primary h-[260px] flex flex-col md:flex-row items-center gap-2 md:gap-7 my-24`}>
+    <div className={`font-primary h-[260px] flex flex-col md:flex-row items-center gap-2 md:gap-7 2xl:gap-[30px] my-24`}>
         <div className="absolute left-0 right-0 w-full h-full md:h-[260px] -z-10">
         </div>
-        <div className="w-full h-full flex items-center md:w-1/3 ">
+        <div className="w-full h-full flex items-center md:w-1/3 2xl:w-[520px]">
             <Content info={aboutInfo} />
         </div>
-        <div className="w-full h-full grid grid-cols-3 lg:grid-cols-3 md:w-2/3 md:pl-10">
+        <div className="w-full h-full items-end grid grid-cols-3 lg:grid-cols-3 md:w-2/3 2xl:w-auto md:pl-10 2xl:pl-0 gap-[85px]">
             {
                 aboutStatData.map((stat) => (
                     <StatCard info={stat} key={stat.id}/>

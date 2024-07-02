@@ -16,7 +16,7 @@ const Banner = () => {
 
   return (
     <>
-        <div className="bg-[url('https://i.ibb.co/Kz1z3JM/home-2.jpg')] bg-left h-[480px] xl:h-[600px] 2xl:h-[700px] z-0 absolute left-0 right-0 bg-[#B0B0B0]">
+        <div className="bg-[url('https://i.ibb.co/Kz1z3JM/home-2.jpg')] bg-left h-[480px] xl:h-[600px] 2xl:h-[781px] z-0 absolute left-0 right-0 bg-[#B0B0B0]">
           {/* <Image 
             src="https://i.ibb.co/Kz1z3JM/home-2.jpg" 
             alt="Banner Image" 
@@ -25,7 +25,7 @@ const Banner = () => {
           /> */}
           <div className="w-full h-full bg-black bg-opacity-10"></div>
         </div>
-        <div className={`h-[480px] xl:h-[600px] 2xl:h-[700px] relative z-10 flex justify-start items-end pb-28`}>
+        <div className={`h-[480px] xl:h-[600px] 2xl:h-[781px] relative z-10 flex justify-start items-end pb-28`}>
             <Heading info={bannerInfo} />
         </div>
     </>

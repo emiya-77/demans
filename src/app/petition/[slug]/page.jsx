@@ -18,8 +18,10 @@ const page = () => {
     <div>
         <Banner value="Single Petition" img={petitionBannerImg} />
         <SinglePetitionContent/>
-        <MovementAction info={SinglePetitionInfo} img={singlePetitionMovementImg} />
-        <div className="mb-40 md:mb-0">
+        <div className="2xl:mt-[222px]">
+          <MovementAction info={SinglePetitionInfo} img={singlePetitionMovementImg} />
+        </div>
+        <div className="mb-40 md:mb-0 2xl:mt-[222px]">
           <NewsLetter/>
         </div>
     </div>

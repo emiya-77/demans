@@ -25,7 +25,7 @@ const leftList = [
 
 const SinglePetitionContent = () => {
   return (
-    <div className="w-full flex flex-col justify-center items-center gap-14 mt-56 lg:mb-40">
+    <div className="w-full flex flex-col justify-center items-center gap-14 mt-56 lg:mb-40 2xl:mb-0">
       <div className="w-full flex flex-col flex-wrap lg:flex-nowrap md:flex-row justify-center gap-8">
         <div className="relative w-full md:w-[calc(50%-16px)] lg:w-1/3 h-[546px] md:h-[380px] lg:h-[546px] bg-[#EDEDED] shadow-lg">
           <Image 

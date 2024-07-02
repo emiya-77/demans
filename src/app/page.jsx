@@ -13,10 +13,10 @@ const Home = () => {
       <Banner />
       <CoreValues />
       <HomeAboutSection />
-      <div className="mt-40">
+      <div className="mt-[263px]">
         <NewsLetter />
       </div>
-      {/* <UrgentThreats /> */}
+      <UrgentThreats />
       <HomeStat/>
       <Movement/>
       <HomeBlog/>

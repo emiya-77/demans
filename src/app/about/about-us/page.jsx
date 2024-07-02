@@ -19,8 +19,12 @@ const AboutUsPage = () => {
       <div className="mb-40 mt-112 md:mb-0 md:mt-0">
         <NewsLetter />
       </div>
-      <MovementAction img={aboutMovementImg}/>
-      <AboutTestimonial/>
+      <div className="pt-[200px] bg-[url('https://i.ibb.co/0JfSXnx/map.png')] bg-fixed">
+        <MovementAction img={aboutMovementImg}/>
+      </div>
+      <div className="mt-[125px]">
+        <AboutTestimonial/>
+      </div>
     </div>
   )
 }

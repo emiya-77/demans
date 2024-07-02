@@ -35,7 +35,7 @@ const petitionInfo = [
 const PetitionContent = () => {
 
   return (
-    <div>
+    <div className="mt-[95px]">
         {
             petitionInfo.map((info) => (
                 <PetitionContentCard key={info.id} info={info}/>

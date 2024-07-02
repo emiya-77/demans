@@ -27,7 +27,7 @@ const HomeAboutSection = () => {
 
     return (
         <ScrollTrigger onEnter={() => setCounterOn(true)} onExit={() => setCounterOn(false)}>
-            <div className={`${dm_serif_display.className} w-full h-[1024px] xl:h-[630px] my-40`}>
+            <div className={`${dm_serif_display.className} w-full h-[1024px] xl:h-[630px] mt-[221px]`}>
                 <div className="h-full flex flex-col xl:flex-row justify-center items-center gap-12 xl:gap-0">
                     <div className="relative w-full bg-[#EDEDED] xl:w-1/2 h-full shadow-lg">
                         <div className="w-full h-full">
@@ -43,8 +43,8 @@ const HomeAboutSection = () => {
                     </div>
                     <div className="w-full xl:w-1/2 px-7">
                         <Content info={aboutInfo} />
-                        <div className="mt-8 text-center lg:text-start">
-                            <div className="flex items-start px-5 gap-7 mb-20 text-start">
+                        <div className="mt-[38px] text-center lg:text-start">
+                            <div className="flex items-start px-5 gap-7 mb-[52px] text-start">
                                 <Image src={quote || ''} className="w-[104px]" alt="quote symbol" />
                                 <p className={`${pt_sans.className}`}>Maecenas at lorem a odio commodo eleifend ac eget nunc. Integer et egestas lacus. In vehicula felis vitae euismod consectetur.</p>
                             </div>

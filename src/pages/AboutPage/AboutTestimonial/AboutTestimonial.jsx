@@ -56,15 +56,15 @@ const AboutTestimonial = () => {
     }, []);
 
     return (
-        <div className="flex flex-col-reverse md:flex-row justify-center items-center h-[305px] my-32 md:my-10 px-6 gap-12">
-            <div className="w-full md:w-1/2 h-full flex gap-2 overflow-hidden shadow-lg">
+        <div className="flex flex-col-reverse md:flex-row justify-center items-center h-[305px] gap-12 2xl:gap-[30px]">
+            <div className="w-full md:w-1/2 2xl:w-[630px] h-full flex gap-2 overflow-hidden shadow-lg">
                 {
                     testimonials.map((testimonial) => (
                         <AboutTestimonialCard key={testimonial.id} info={testimonial} currentTestimonial={currentTestimonial}/>
                     ))
                 }
             </div>
-            <div className="w-full md:w-1/2 h-full flex flex-col justify-between items-start">
+            <div className="w-full md:w-1/2 2xl:w-[630px] h-full flex flex-col justify-between items-start">
                 <Content info={testimonialInfo} />
                 <Button value="More Testimonials" />
             </div>

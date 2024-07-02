@@ -36,8 +36,8 @@ const Movement = () => {
     ]
     
   return (
-    <div className="flex flex-col">
-        <div className="relative h-[300px] md:h-[538px] bg-[#EDEDED]">
+    <div className="flex flex-col bg-[url('https://i.ibb.co/0JfSXnx/map.png')] bg-fixed">
+        <div className="relative h-[300px] md:h-[538px]">
             <Image 
                 src="https://i.ibb.co/6mKC066/home-24.jpg" 
                 alt="Movement Image" 
@@ -45,14 +45,14 @@ const Movement = () => {
                 objectFit="cover"
             />
         </div>
-        <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4 place-items-center py-4 my-4">
+        <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4 gap-[30px] mt-[54px]">
             {
                 movementData.map((movement) => (
                     <MovementCard info={movement} key={movement.id}/>
                 ))
             }
         </div>
-        <div>
+        <div className="2xl:mt-[143px]">
             <MovementAction img="https://i.ibb.co/j3dbbVH/home-27.jpg"/>
         </div>
     </div>

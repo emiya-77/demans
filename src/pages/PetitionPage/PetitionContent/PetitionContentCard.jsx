@@ -5,7 +5,7 @@ const PetitionContentCard = ({info}) => {
     const {img, title, description, left_topText, leftList, left_bottomText,} = info || '';
 
   return (
-    <div className="mt-16 mb-32">
+    <div className="mb-[193px]">
         <div className="relative h-[538px] bg-[#EDEDED]">
             <Image src={img || ''} 
                 alt="Home About Us Image" 
@@ -13,20 +13,20 @@ const PetitionContentCard = ({info}) => {
                 objectFit="cover"
                 />
         </div>
-        <div className="flex flex-col md:flex-row justify-between py-8">
-            <div className="w-full md:w-1/2">
+        <div className="flex flex-col md:flex-row justify-between mt-[29px]">
+            <div className="w-full md:w-1/2 2xl:w-[630px] 2xl:-mt-[14px]">
                 <Content info={{title:title, description:description, titleColor:"#000000"}}/>
             </div>
-            <div className="w-full md:w-1/2 h-full flex flex-col items-start justify-between font-secondary">
-                <p className="text-[#7E7E7E]">{left_topText}</p>
-                <ul className="p-6 space-y-4">
+            <div className="w-full md:w-1/2 2xl:w-[630px] h-full flex flex-col items-start justify-between font-secondary">
+                <p className="text-[#7E7E7E] leading-[21px] mb-[31px]">{left_topText}</p>
+                <ul className="space-y-[14px] mb-[29px]">
                     {
                         leftList?.map((listItem, idx) => (
                             <li className="list-disc" key={idx}>{listItem}</li>
                         ))
                     }
                 </ul>
-                <p className="text-[#7E7E7E]">{left_bottomText}</p>
+                <p className="text-[#7E7E7E] leading-[21px]">{left_bottomText}</p>
             </div>
         </div>
     </div>

@@ -1,7 +1,9 @@
-import Image from "next/image"
-import bg from "@/../public/symbol/map.png"
 import Heading from "@/components/heading/Heading";
 import UrgentThreatsCard from "./UrgentThreatsCard";
+
+import threatImg1 from "@/../public/img/home/home-17.jpg"
+import threatImg2 from "@/../public/img/home/home-19.jpg"
+import threatImg3 from "@/../public/img/home/home-22.jpg"
 
 const urgentInfo = {
     alignment: "center",
@@ -17,23 +19,26 @@ const urgentCard = [
         id: 1,
         title: "Saving the Endangered Turtle",
         description: "Donec faucibus ante sed nibh semper, nec posuere libero pharetra. In dignissim leo nisl, eu scelerisque ex ornare iaculis.",
+        img: threatImg1,
     },
     {
         id: 2,
         title: "Protecting the Frog's Native Habitat",
         description: "Donec faucibus ante sed nibh semper, nec posuere libero pharetra. In dignissim leo nisl, eu scelerisque ex ornare iaculis.",
+        img: threatImg2,
     },
     {
         id: 3,
         title: "Help Protect the Climate",
         description: "Donec faucibus ante sed nibh semper, nec posuere libero pharetra. In dignissim leo nisl, eu scelerisque ex ornare iaculis.",
+        img: threatImg3,
     }
 ]
 
 const UrgentThreats = () => {
   return (
-    <div className="w-full max-h-[700px] lg:max-h-[800px] xl:max-h-[1218px] -z-20 flex flex-col justify-center items-center relative">
-        <Image src={bg || ''} className="absolute scale-150 -z-10" alt="Background Image" />
+    <div className="w-full max-h-[700px] lg:max-h-[800px] xl:max-h-[1218px] -z-20 flex flex-col justify-center items-center relative bg-[url('https://i.ibb.co/0JfSXnx/map.png')] bg-fixed pt-[175px] pb-[178px]">
+        {/* <Image src={bg || ''} className="absolute scale-150 -z-10" alt="Background Image" /> */}
         <div className="mb-10">
             <Heading info={urgentInfo} />
         </div>

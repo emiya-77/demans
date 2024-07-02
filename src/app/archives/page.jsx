@@ -18,8 +18,10 @@ const ArchivesPage = () => {
     <div>
       <Banner value="Archives" img={archivesBannerImg} />
       <ArchivesBlog />
-      <MovementAction info={archivesActionInfo} img={archivesMovementImg} />
-      <div className="mb-40 md:mb-0">
+      <div className="2xl:mt-[155px]">
+        <MovementAction info={archivesActionInfo} img={archivesMovementImg} />
+      </div>
+      <div className="mb-40 md:mb-0 2xl:mt-[155px]">
         <NewsLetter/>
       </div>
     </div>

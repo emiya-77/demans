@@ -17,10 +17,10 @@ const leftList = [
 
 const SingleArchivesPost = () => {
   return (
-    <div className="mt-20 2xl:my-40">
+    <div className="mt-20 2xl:mt-[153px]">
         <div className="h-[250px] md:h-[430px] lg:h-[500px] xl:h-[700px] 2xl:h-[860px] bg-[#EDEDED]"></div>
         <div>
-            <div className="flex justify-between md:gap-8 mb-8 md:mb-20 flex-wrap">
+            <div className="flex justify-between 2xl:justify-start md:gap-8 mb-8 md:mb-[83px] flex-wrap">
                 <div className="flex p-2 justify-center items-center gap-3">
                     <div className="text-primary">
                         <SlCalender size={20}/>
@@ -40,12 +40,12 @@ const SingleArchivesPost = () => {
                     <p className="font-primary text-[14px] md:text-[19.2px]">No Comment</p>
                 </div>
             </div>
-            <div className="mb-6">
+            <div className="mb-[36px]">
                 <Content info={singleArchivesInfo}/>
             </div>
             <div className="flex flex-col md:flex-row gap-6 md:gap-0">
                 <div className="w-full md:w-1/2">
-                    <ul className="p-6 space-y-4">
+                    <ul className="px-6 mb-[36px] space-y-4">
                         {
                             leftList?.map((listItem, idx) => (
                                 <li className="list-disc" key={idx}>{listItem}</li>

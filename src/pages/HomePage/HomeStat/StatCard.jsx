@@ -4,9 +4,9 @@ const StatCard = ({info}) => {
     const {percentage, content} = info || "";
 
   return (
-    <div className="flex justify-center items-center">
-        <div className="w-[233px] lg:-mt-24">
-            <div className="w-full overflow-hidden h-[180px] relative flex justify-center items-center">
+    <div className="flex w-[201px] justify-center items-center">
+        <div className="w-full lg:-mt-14">
+            <div className="w-full overflow-hidden h-[120px] relative flex justify-center items-center mb-[14px]">
                 <DoughnutJS progress={percentage}/>
                 <h1 className="absolute mt-3 ml-2 text-[19.2px] text-white">{percentage}%</h1>
             </div>
