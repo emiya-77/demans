@@ -10,7 +10,7 @@ const StatCard = ({info}) => {
                 <DoughnutJS progress={percentage}/>
                 <h1 className="absolute mt-3 ml-2 text-[19.2px] text-black">{percentage}%</h1>
             </div>
-            <h2 className="text-xl lg:text-3xl lg:text-[24px] 2xl:text-[21.6px] text-center text-black">
+            <h2 className="text-xl lg:text-3xl lg:text-[24px] 2xl:text-[21.6px] text-center text-black line-clamp-1">
                 {content}
             </h2>
         </div>

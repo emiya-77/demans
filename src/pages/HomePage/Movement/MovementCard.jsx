@@ -4,7 +4,7 @@ import Image from "next/image";
 const MovementCard = ({info}) => {
     const {title, content, image} = info || "";
   return (
-    <div className="w-[300px] hover:scale-105 hover:shadow-md transition-all duration-300 ease-in-out">
+    <div className="w-[300px] hover:scale-105 transition-all duration-300 ease-in-out">
         <div className="relative mb-[20px] flex justify-center xl:justify-start">
             <Image src={image || ''} alt={title || ""}/>
         </div>
