@@ -17,11 +17,11 @@ const PetitionPage = () => {
   return (
     <div>
       <Banner value="Petition" img={petitionBannerImg}/>
-      <div className="mt-[145px]">
+      <div className="lg:mt-[145px]">
         <MovementAction info={petitionActionInfo} img={petitionMovementImg} />
       </div>
       <PetitionContent/>
-      <div className="mb-40 md:mb-0">
+      <div className="mb-60 md:mb-0">
         <NewsLetter/>
       </div>
     </div>

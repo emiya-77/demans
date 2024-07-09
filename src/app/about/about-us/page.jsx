@@ -16,13 +16,13 @@ const AboutUsPage = () => {
       <AboutNumbers/>
       <HomeAboutSection />
       <AboutStat />
-      <div className="mb-40 mt-112 md:mb-0 md:mt-0">
+      <div className="mb-40 mt-60 lg:mt-[112px] md:mb-0 md:mt-0">
         <NewsLetter />
       </div>
-      <div className="pt-[200px] bg-[url('https://i.ibb.co/0JfSXnx/map.png')] bg-fixed">
+      <div className="lg:pt-[100px] xl:pt-[200px] bg-[url('https://i.ibb.co/0JfSXnx/map.png')] bg-fixed">
         <MovementAction img={aboutMovementImg}/>
       </div>
-      <div className="mt-[125px]">
+      <div className="md:mt-[125px]">
         <AboutTestimonial/>
       </div>
     </div>

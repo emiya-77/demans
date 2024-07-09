@@ -22,8 +22,8 @@ const homeStatData = [
 
 const HomeStat = () => {
   return (
-    <div className={`font-primary h-[960px] lg:h-[677px] flex flex-col xl:flex-row items-center gap-2 md:gap-[110px] mb-56`}>
-        <div className="absolute bg-[url('https://i.ibb.co/k8xykrW/home-5.jpg')] bg-fixed left-0 right-0 w-full h-[960px] lg:h-[677px] bg-[#787878] -z-10">
+    <div className={`font-primary h-[960px] lg:h-[677px] flex flex-col xl:flex-row items-center gap-2 lg:pb-6 xl:pb-0 xl:gap-[110px] mb-28 lg:mb-36 xl:mb-56`}>
+        <div className="absolute bg-[url('https://i.ibb.co/k8xykrW/home-5.jpg')] bg-fixed bg-center left-0 right-0 w-full h-[960px] lg:h-[677px] bg-[#787878] -z-10">
             {/* <Image 
                 src="https://i.ibb.co/k8xykrW/home-5.jpg" 
                 alt="Banner Image" 
@@ -37,7 +37,7 @@ const HomeStat = () => {
                 <h1 className={`font-primary font-medium text-white text-[30px] lg:text-[50px] xl:text-[64px] leading-[50px] lg:leading-[90px] mt-[13px]`}>Join A Wildlife Community Of Over Millions</h1>
             </div>
         </div>
-        <div className="h-full grid grid-cols-2 lg:grid-cols-3 xl:grid-cols-3 gap-[68px]">
+        <div className="h-full grid grid-cols-2 lg:grid-cols-3 xl:grid-cols-3 gap-[20px] md:gap-x-[68px] md:gap-y-0 lg:gap-[68px]">
             {
                 homeStatData.map((stat) => (
                     <StatCard info={stat} key={stat.id}/>

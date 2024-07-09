@@ -26,7 +26,7 @@ const AboutNumbersCard = ({info}) => {
                 {/* {counterOn && <Number n={number} />} */}
                 {
                   counterOn &&
-                  <CountUp start={0} end={number} duration={4} delay={0}/>
+                  <CountUp start={0} end={number} duration={3} delay={0}/>
                 }
             </h1>
             <p className="text-[16px] md:text-[24px] text-primary">{title || ""}</p>

@@ -9,6 +9,7 @@ const urgentInfo = {
     alignment: "center",
     titleSize: 92.8,
     titleColor: "#111111",
+    subTitle: "Take Action",
     title: "Ready To Face Urgent Threats",
     description: "Duis molestie lobortis metus, sit amet accumsan sem gravida nec. Curabitur eu elit nec erat facilisis volutpat vel et mi.",
     width: "1000px"
@@ -37,7 +38,7 @@ const urgentCard = [
 
 const UrgentThreats = () => {
   return (
-    <div className="w-full max-h-[700px] lg:max-h-[800px] xl:max-h-[1218px] -z-20 flex flex-col justify-center items-center relative bg-[url('https://i.ibb.co/0JfSXnx/map.png')] bg-fixed pt-[175px] pb-[178px]">
+    <div className="w-full md:max-h-[700px] lg:max-h-[800px] xl:max-h-[1218px] -z-20 flex flex-col justify-center items-center relative bg-[url('https://i.ibb.co/0JfSXnx/map.png')] bg-fixed bg-center pt-[175px] xl:pt-[175px] pb-[178px] md:pb-[378px] lg:pb-[278px]">
         {/* <Image src={bg || ''} className="absolute scale-150 -z-10" alt="Background Image" /> */}
         <div className="mb-10">
             <Heading info={urgentInfo} />

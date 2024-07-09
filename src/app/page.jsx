@@ -13,10 +13,12 @@ const Home = () => {
       <Banner />
       <CoreValues />
       <HomeAboutSection />
-      <div className="mt-[263px]">
+      <div className="mt-28 md:mt-36 xl:mt-[263px]">
         <NewsLetter />
       </div>
-      <UrgentThreats />
+      <div className="pt-[100px]">
+        <UrgentThreats />
+      </div>
       <HomeStat/>
       <Movement/>
       <HomeBlog/>

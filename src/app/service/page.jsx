@@ -9,9 +9,11 @@ const ServicePage = () => {
   return (
     <div>
       <Banner value="Services" img={servicesBannerImg}/>
-      <UrgentThreats />
+      <div className="">
+        <UrgentThreats />
+      </div>
       <HelpSection/>
-      <div className="mb-40 md:mb-0">
+      <div className="mb-60 md:mb-0">
         <NewsLetter/>
       </div>
     </div>

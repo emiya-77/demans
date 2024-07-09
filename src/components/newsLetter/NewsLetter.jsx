@@ -6,7 +6,7 @@ const dm_serif_display = DM_Serif_Display({ subsets: ["latin"], weight: "400" })
 const NewsLetter = () => {
     return (
         <div className={`font-primary h-[458px] flex flex-col md:flex-row items-center gap-2 md:gap-0 2xl:gap-[30px]`}>
-            <div className="absolute bg-[url('https://i.ibb.co/yWKCkh1/home-11.jpg')] bg-left bg-fixed left-0 w-full h-full md:h-[458px] -z-10">
+            <div className="absolute bg-[url('https://i.ibb.co/SVPs72X/home-12.jpg')] bg-left bg-fixed left-0 w-full h-full md:h-[458px] -z-10">
             </div>
             <div className="absolute w-full left-0 right-0 h-full md:h-[458px] bg-black opacity-20"></div>
             <div className="w-full md:w-1/3 2xl:w-[410px] h-full flex justify-start items-start">

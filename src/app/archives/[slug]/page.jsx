@@ -7,7 +7,9 @@ const SinglePostPage = () => {
   return (
     <div>
       <Banner value="Single Post" img={singlePostBannerImg}/>
-      <SingleArchivesPost/>
+      <div className="mb-20">
+        <SingleArchivesPost/>
+      </div>
     </div>
   )
 }

@@ -8,7 +8,7 @@ const UrgentThreatsCard = ({info}) => {
     const {title, description, img} = info || "";
     console.log(info);
   return (
-    <div className="w-[410px] bg-black bg-opacity-30 h-[330px] xl:h-[500px] flex flex-col items-center mt-20">
+    <div className="md:w-[410px] bg-black bg-opacity-30 h-[330px] xl:h-[500px] flex flex-col items-center mt-20">
         <div className="relative w-[150px] h-[200px] xl:w-[250px] xl:h-[300px] bg-[#EDEDED] -mt-10 xl:-mt-12 shadow-xl">
           <Image 
             src={img || ""} 

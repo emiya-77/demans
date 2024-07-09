@@ -32,8 +32,8 @@ const homeBlogInfo = [
 const HomeBlog = () => {
 
   return (
-    <div className="min-h-[954px] mt-[169px]">
-        <div className="absolute bg-[#EDEDED] h-[1850px] lg:h-[1350px] xl:h-[950px] left-0 right-0 -z-10"></div>
+    <div className="min-h-[954px] xl:mt-[169px] mb-16 md:mb-0">
+        <div className="absolute bg-[#EDEDED] h-[1905px] lg:h-[1350px] xl:h-[950px] left-0 right-0 -z-10"></div>
         <div className="py-20">
             <div className="mb-[18px]">
                 <Heading info={info} />

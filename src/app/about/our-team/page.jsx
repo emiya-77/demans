@@ -23,10 +23,10 @@ const OurTeamPage = () => {
       <div className="mt-20">
         <OurVolunteers />
       </div>
-      <div className="mt-[195px]">
+      <div className="lg:mt-[60px] xl:mt-[100px] 2xl:mt-[195px]">
         <MovementAction info={teamActionInfo} img={teamMovementImg}/>
       </div>
-      <div className="mt-[147px]">
+      <div className="md:mt-[100px] lg:mt-[147px] xl:mt-[100px] 2xl:mt-[147px] mb-60 md:mb-0">
         <NewsLetter />
       </div>
     </div>

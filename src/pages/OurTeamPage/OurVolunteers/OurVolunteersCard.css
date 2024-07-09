@@ -1,0 +1,51 @@
+
+.cont .li{
+    position: relative;
+    width: 40px;
+    height: 40px;
+    background: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid black;
+    cursor: pointer;
+    overflow: hidden;
+}
+
+.cont .li:hover{
+    transition: background 0.001s ease 0.3s;
+    background: #ff8e00;
+}
+
+.cont .li:before,
+.cont .li:after{
+    position: absolute;
+    content: "";
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    border: 0px solid transparent;
+}
+
+.cont .li:hover:before{
+    border-width: 40px;
+    border-top-color: #ff8e00;
+    transition: border-top-width 0.3s ease, border-top-color 0.3s ease;
+}
+.cont .li:hover:after{
+    border-width: 40px;
+    border-left-color: #ff8e00;
+    transition: border-left-width 0.3s ease, border-left-color 0.3s ease;
+}
+
+.cont .li .a{
+    color: white;
+    transition: all 0.25s ease;
+    z-index: 1;
+    position: relative;
+}
+
+.cont .li:hover .a{
+    color: black;
+}

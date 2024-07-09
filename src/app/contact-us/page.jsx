@@ -9,7 +9,9 @@ const ContactUsPage = () => {
     <div>
       <Banner value="Contact" img={contactBannerImg}/>
       <ContactForm />
-      <ContactMap />
+      <div className="mb-20 md:mb-0">
+        <ContactMap />
+      </div>
     </div>
   )
 }

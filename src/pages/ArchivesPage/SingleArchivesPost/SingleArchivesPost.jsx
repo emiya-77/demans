@@ -20,7 +20,7 @@ const SingleArchivesPost = () => {
     <div className="mt-20 2xl:mt-[153px]">
         <div className="h-[250px] md:h-[430px] lg:h-[500px] xl:h-[700px] 2xl:h-[860px] bg-[#EDEDED]"></div>
         <div>
-            <div className="flex justify-between 2xl:justify-start md:gap-8 mb-8 md:mb-[83px] flex-wrap">
+            <div className="flex justify-start md:gap-8 mb-8 md:mb-[83px] flex-wrap">
                 <div className="flex p-2 justify-center items-center gap-3">
                     <div className="text-primary">
                         <SlCalender size={20}/>

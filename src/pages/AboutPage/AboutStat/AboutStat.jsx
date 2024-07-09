@@ -39,7 +39,7 @@ const AboutStat = () => {
         <div className="w-full h-full flex items-center md:w-1/3 2xl:w-[520px]">
             <Content info={aboutInfo} />
         </div>
-        <div className="w-full h-full items-end grid grid-cols-3 lg:grid-cols-3 md:w-2/3 2xl:w-auto md:pl-10 2xl:pl-0 gap-[85px]">
+        <div className="w-full h-full items-end grid grid-cols-3 lg:grid-cols-3 md:w-2/3 2xl:w-auto md:pl-10 2xl:pl-0 gap-0 lg:gap-[85px]">
             {
                 aboutStatData.map((stat) => (
                     <StatCard info={stat} key={stat.id}/>

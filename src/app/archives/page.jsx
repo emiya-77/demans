@@ -21,7 +21,7 @@ const ArchivesPage = () => {
       <div className="2xl:mt-[155px]">
         <MovementAction info={archivesActionInfo} img={archivesMovementImg} />
       </div>
-      <div className="mb-40 md:mb-0 2xl:mt-[155px]">
+      <div className="mb-60 md:mb-0 lg:mt-20 2xl:mt-[155px]">
         <NewsLetter/>
       </div>
     </div>

@@ -1,5 +1,8 @@
 import Button from "@/components/button/Button";
 import styles from './ContactForm.module.css';
+import Image from "next/image";
+
+import ContactImg from "@/../public/img/contact/contact-3.jpg";
 
 const ContactForm = () => {
   return (
@@ -15,13 +18,13 @@ const ContactForm = () => {
               <input className="font-secondary w-full px-4 pb-2 bg-transparent placeholder:text-[#EDEDED] border-b-[1px] border-white mb-[39px] focus:outline-none" type="text" id="name" name="name" placeholder="Your Name" />
               <input className="font-secondary w-full px-4 pb-2 bg-transparent placeholder:text-[#EDEDED] border-b-[1px] border-white mb-2 focus:outline-none" type="email" id="email" name="email" placeholder="Your Email" />
               <textarea className={`textarea font-secondary w-full px-4 pb-2 bg-transparent placeholder:text-[#EDEDED] border-b-[1px] border-white focus:outline-none ${styles.textarea}`} name="" id="" placeholder="Write Your Message" rows={3}></textarea>
-              <div className="mt-[73px]">
+              <div className="mt-6 md:mt-[73px]">
                 <Button value="Send Message" />
               </div>
             </form>
           </div>
         </div>
-        <div className="w-full lg:w-1/2 2xl:w-[630px] h-full flex flex-col justify-center md:flex-row lg:flex-col">
+        <div className="w-full lg:w-1/2 2xl:w-[565px] h-full flex flex-col justify-center md:flex-row lg:flex-col mt-20 lg:mt-0">
           <div className="w-full md:w-1/2 lg:w-auto font-primary text-white bg-transparent text-[19.2px] p-8 space-y-2">
             <h2>
               99 Roving St,. Big City, Pku
@@ -33,7 +36,8 @@ const ContactForm = () => {
               hello@awesomesite.com
             </h2>
           </div>
-          <div className="w-full md:w-1/2 lg:w-full h-[234px] bg-white">
+          <div className="relative w-full md:w-1/2 lg:w-full h-[300px] bg-white shadow-lg">
+            <Image src={ContactImg || ''} alt="Contact Us Image" layout="fill" objectFit="cover"/>
           </div>
         </div>
       </div>

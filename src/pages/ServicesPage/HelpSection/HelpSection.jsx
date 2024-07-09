@@ -26,7 +26,7 @@ const HelpSection = () => {
     <div>
         <div className="absolute -z-10 left-0 right-0 h-[1857px] md:h-[1000px] lg:h-[1857px] bg-primary">
         </div>
-        <div className="h-[1857px] md:h-[1000px] lg:h-[1857px] flex flex-col gap-20 md:gap-4">
+        <div className="h-[1857px] md:h-[1000px] lg:h-[1257px] xl:h-[1857px] flex flex-col gap-20 md:gap-4">
             <div className="h-1/3 flex items-center">
                 <div className="w-[989px] p-4">
                     <Content info={servicesFirstInfo}/>

@@ -21,7 +21,7 @@ const NavLink = ({ item }) => {
   return (
     <div className="relative">
       <Link
-        className={`${isActive && styles.active} flex items-center underline text-[19px] font-medium md:text-[16px] xl:text-[19px] hover:text-primary px-4 lg:p-0 xl:px-4`}
+        className={`${isActive && styles.active} flex items-center underline text-[19px] font-medium md:text-[16px] xl:text-[19px] hover:text-primary px-4 lg:pr-2 xl:px-4`}
         href={item.path}
         key={item.title}
         onMouseEnter={item.dropdown ? handleDropdownEnter : null}

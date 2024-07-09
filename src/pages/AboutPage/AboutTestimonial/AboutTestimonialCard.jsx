@@ -1,8 +1,10 @@
+"use client"
+import Image from 'next/image';
 import React from 'react'
 import { LiaStarSolid } from 'react-icons/lia'
 
 const AboutTestimonialCard = ({info, currentTestimonial, isAnimating}) => {
-    const {img, text, name, designation} = info || "";
+    const {userImg, img, text, name, designation} = info || "";
 
   return (
     <div className={`w-full h-full bg-[#EDEDED] flex flex-shrink-0 flex-grow-0 justify-center items-center transition-all duration-1000 ease-in-out bg-cover bg-center`} style={{
@@ -24,7 +26,13 @@ const AboutTestimonialCard = ({info, currentTestimonial, isAnimating}) => {
             {text}
         </h3>
         <div className="flex justify-start gap-8">
-            <div className="w-[60px] h-[60px] rounded-full bg-[#EDEDED]">
+            <div className="relative flex justify-center items-center w-[60px] h-[60px] rounded-full bg-[#EDEDED] overflow-hidden">
+                <Image 
+                    src={userImg}
+                    alt="Testimonial User Image" 
+                    layout="fill" 
+                    objectFit="cover"
+                />
             </div>
         <div>
             <h4 className="font-primary text-[19.2px]">
